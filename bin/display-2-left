@@ -1,0 +1,4 @@
+#!/bin/bash
+xrandr --output HDMI-1-2 --same-as eDP-1-1
+xrandr --output HDMI
+# xinput map-to-output 14 eDP1

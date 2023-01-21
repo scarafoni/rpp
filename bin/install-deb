@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo dpkg -i $1
+sudo apt-get install -f

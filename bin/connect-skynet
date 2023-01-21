@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ssh -q -X dscarafoni3@sky1.cc.gatech.edu \
+	-L 8000:localhost:8000 \
+	-L 8001:localhost:8001 \
+	-L 8002:localhost:8002 \
+	-L 8003:localhost:8003 \
+	-L 8004:localhost:8004 \
+	-L 8005:localhost:8005 \
+    -L 8006:localhost:8006 \
+    -L 8007:localhost:8007 \
+    -L 8008:localhost:8008

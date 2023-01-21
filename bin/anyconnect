@@ -1,0 +1,4 @@
+#!/bin/bash
+reset-network
+/opt/cisco/anyconnect/bin/vpnui > /dev/null 2>&1 &
+

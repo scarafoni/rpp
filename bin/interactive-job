@@ -1,0 +1,3 @@
+#!/bin/bash
+
+srun --gres gpu:${1} -p long -J "test" --pty bash

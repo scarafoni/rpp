@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nmcli --ask con up id eduroam

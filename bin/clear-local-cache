@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf ~/.conda/pkgs/*
+rm -rf ~/anaconda3/pkgs/*
+rm -rf ~/.cache/*

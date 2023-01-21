@@ -1,0 +1,88 @@
+alias ..="cd .."
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+alias mkdir='mkdir -pv'
+alias h='history'
+alias j='jobs -l'
+
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+alias rm='rm -I --preserve-root'
+
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+alias apt-get="sudo apt-get"
+alias updatey="sudo apt-get --yes"
+
+# update on one command
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+alias root='sudo -i'
+alias su='sudo -i'
+
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+ ## pass options to free ##
+alias meminfo='free -m -l -t'
+  
+## get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+## get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+## Get server cpu info ##
+alias cpuinfo='lscpu'
+
+## older system use /proc/cpuinfo ##
+##alias cpuinfo='less /proc/cpuinfo' ##
+
+## get GPU ram on desktop / laptop##
+alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
+
+alias wget='wget -c'
+
+# git stuff
+alias gad='git add'
+alias gct='git commit -am'
+alias gph='git push'
+
+# stuff for my experiments
+export EDITOR=vim
+export PYTHONPATH=$PYTHONPATH:~/dev
+alias cd-rp="cd $RP"
+alias cd-dev='cd ~/dev'
+alias bashrc="vim ~/.bashrc"
+alias zshrc="vim ~/.zshrc"
+alias source-bashrc='source ~/.bashrc'
+alias source-zshrc='source ~/.zshrc'
+alias source-rprc='source ${RP}/.rprc'
+alias rprc="vim ${RP}/.rprc"
+alias vimrc="vim ${RP}/.vimrc"
+alias weather='curl wttr.in/atlanta'
+alias cfinstal='conda install -c conda-forge'
+alias ytdl-audio='youtube-dl -i --retries infinite --extract-audio --audio-format mp3'

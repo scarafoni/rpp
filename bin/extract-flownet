@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+python $RP/repos/flownet2_pytorch/flow_extractor_image_dir.py \
+    --image_dir_in $1 \
+    --flow_dir_out $2  \
+    --checkpoint $RP/repos/flownet2_pytorch/FlowNet2_checkpoint.pth.tar \
+    --flow_output_type flo \
+    --batch_size ${3:-32} \
+    --skip-existing

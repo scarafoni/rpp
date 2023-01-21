@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+find $1 -type d -name $2 -print
